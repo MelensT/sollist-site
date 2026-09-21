@@ -1,0 +1,42 @@
+/* Sollist — mini-site statique (aucun script tiers, aucun cookie, aucune police externe) */
+:root {
+  --bg: #F7F9FC; --card: #FFFFFF; --text: #202124; --muted: #5F6368; --line: #E3E6EA;
+  --brand-a: #4C8DF6; --brand-b: #1DB5A6; --link: #1A56C4; --note-bg: #FFF8E1; --note-text: #7A5C00;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #111418; --card: #1B1F24; --text: #E8EAED; --muted: #A5ABB3; --line: #2C3138;
+          --link: #8AB4F8; --note-bg: #2A2413; --note-text: #F3D98B; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text); line-height: 1.6;
+       font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+a { color: var(--link); }
+.hero { background: linear-gradient(160deg, var(--brand-a), var(--brand-b)); color: #fff; padding: 40px 16px 56px; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 0 16px; }
+.hero .wrap { padding: 0; }
+.topbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.brand { font-weight: 800; font-size: 20px; letter-spacing: .2px; color: #fff; text-decoration: none; }
+.langs { display: flex; gap: 6px; }
+.langs button { font: inherit; font-size: 13px; font-weight: 700; color: #fff; background: rgba(255,255,255,.18);
+                border: 1px solid rgba(255,255,255,.45); border-radius: 999px; padding: 5px 12px; cursor: pointer; }
+.langs button[aria-pressed="true"] { background: #fff; color: #1A56C4; }
+.hero h1 { font-size: clamp(28px, 6vw, 40px); line-height: 1.15; margin: 34px 0 10px; }
+.hero p { font-size: 17px; margin: 0; max-width: 640px; opacity: .96; }
+main { margin-top: -28px; padding-bottom: 56px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 22px 22px; margin-bottom: 16px; }
+.card h2 { font-size: 19px; margin: 0 0 8px; }
+.card h3 { font-size: 15.5px; margin: 18px 0 4px; }
+.card p, .card li { font-size: 15.5px; }
+.card ul { padding-left: 20px; margin: 8px 0; }
+.app { display: flex; gap: 16px; align-items: flex-start; }
+.app img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
+.btn { display: inline-block; margin-top: 10px; background: #1A56C4; color: #fff; text-decoration: none;
+       font-weight: 700; font-size: 14.5px; border-radius: 12px; padding: 10px 16px; }
+.note { background: var(--note-bg); color: var(--note-text); border-radius: 14px; padding: 13px 16px; font-size: 14.5px; margin-top: 14px; }
+.legal { color: var(--muted); font-size: 14px; }
+.legal strong { color: var(--text); }
+footer { color: var(--muted); font-size: 13px; text-align: center; padding: 0 16px 40px; }
+/* Bascule de langue : sans JavaScript, les trois langues restent visibles l'une sous l'autre */
+.js [data-lang] { display: none; }
+.js [data-lang].on { display: block; }
