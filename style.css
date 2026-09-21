@@ -31,6 +31,9 @@ main { margin-top: -28px; padding-bottom: 56px; }
 .card ul { padding-left: 20px; margin: 8px 0; }
 .app { display: flex; gap: 16px; align-items: flex-start; }
 .app img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
+.applink { display: flex; gap: 12px; align-items: center; padding: 12px 18px; }
+.applink img { width: 36px; height: 36px; border-radius: 9px; flex: none; }
+.applink p { margin: 0; }
 .btn { display: inline-block; margin-top: 10px; background: #1A56C4; color: #fff; text-decoration: none;
        font-weight: 700; font-size: 14.5px; border-radius: 12px; padding: 10px 16px; }
 .note { background: var(--note-bg); color: var(--note-text); border-radius: 14px; padding: 13px 16px; font-size: 14.5px; margin-top: 14px; }
