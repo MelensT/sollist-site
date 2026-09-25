@@ -5,21 +5,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SOLLIST</title>
 <meta name="description" content="SOLLIST SRL — société belge qui conçoit et édite des applications.">
-<link rel="icon" href="assets/favicon.png">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon.png">
 <link rel="stylesheet" href="style.css">
 <script src="lang.js" defer></script>
 </head>
 <body>
 
-<header class="hero"><div class="wrap">
-  <div class="topbar">
-    <a class="brand" href="./">SOLLIST</a>
-    <div class="langs" role="group" aria-label="Language">
-      <button data-set="fr" aria-pressed="false">FR</button>
-      <button data-set="nl" aria-pressed="false">NL</button>
-      <button data-set="en" aria-pressed="false">EN</button>
-    </div>
+<header class="topbar"><div class="wrap">
+  <a class="brand" href="./" aria-label="SOLLIST — accueil">
+      <svg class="logo" viewBox="0 0 430 104" role="img" aria-label="SOLLIST" font-family="Arial, Helvetica, sans-serif">
+        <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B5FB0"/><stop offset="1" stop-color="#16B8A6"/></linearGradient></defs>
+        <g fill="url(#lg)"><rect x="0" y="32" width="18" height="40" rx="9"/><rect x="28" y="16" width="18" height="72" rx="9"/><rect x="56" y="0" width="18" height="104" rx="9"/><rect x="84" y="16" width="18" height="72" rx="9"/><rect x="112" y="32" width="18" height="40" rx="9"/></g>
+        <text class="wm" x="160" y="73" font-size="58" font-weight="700" letter-spacing="2">SOL<tspan fill="#16B8A6">LIST</tspan></text>
+      </svg>
+    </a>
+  <div class="langs" role="group" aria-label="Language">
+    <button data-set="fr" aria-pressed="false">FR</button>
+    <button data-set="nl" aria-pressed="false">NL</button>
+    <button data-set="en" aria-pressed="false">EN</button>
   </div>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <p class="tagline">Solutions through listening</p>
   <div data-lang="fr" class="on">
     <h1>Des outils numériques</h1>
     <p>SOLLIST SRL est une société belge qui conçoit et édite des applications.</p>
@@ -32,7 +41,7 @@
     <h1>Digital tools</h1>
     <p>SOLLIST SRL is a Belgian company that designs and publishes applications.</p>
   </div>
-</div></header>
+</div></section>
 
 <main class="wrap">
 
@@ -60,9 +69,11 @@
     </div>
   </section>
 
-  <section class="card legal">
+  <details class="card legal">
+    <summary>
+      <span data-lang="fr" class="on">Mentions légales</span><span data-lang="nl">Wettelijke vermeldingen</span><span data-lang="en">Legal notice</span>
+    </summary>
     <div data-lang="fr" class="on">
-      <h2>Mentions légales</h2>
       <p><strong>SOLLIST SRL</strong> — société à responsabilité limitée de droit belge<br>
       Numéro d'entreprise (BCE) : <strong>1042.562.631</strong><br>
       Siège : Avenue Louis Van Gorp 8, 1150 Woluwe-Saint-Pierre, Belgique<br>
@@ -70,7 +81,6 @@
       <p>Ce site n'utilise ni cookie, ni outil de mesure d'audience.</p>
     </div>
     <div data-lang="nl">
-      <h2>Wettelijke vermeldingen</h2>
       <p><strong>SOLLIST BV</strong> — besloten vennootschap naar Belgisch recht (SRL)<br>
       Ondernemingsnummer (KBO): <strong>1042.562.631</strong><br>
       Zetel: Louis Van Gorplaan 8, 1150 Sint-Pieters-Woluwe, België<br>
@@ -78,14 +88,13 @@
       <p>Deze site gebruikt geen cookies en geen analysetools.</p>
     </div>
     <div data-lang="en">
-      <h2>Legal notice</h2>
       <p><strong>SOLLIST SRL</strong> — Belgian private limited company<br>
       Company number (BCE/KBO): <strong>1042.562.631</strong><br>
       Registered office: Avenue Louis Van Gorp 8, 1150 Woluwe-Saint-Pierre, Belgium<br>
       E-mail: <a href="mailto:contact@sollist.co">contact@sollist.co</a></p>
       <p>This site uses no cookies and no analytics.</p>
     </div>
-  </section>
+    </details>
 
 </main>
 
