@@ -4,6 +4,7 @@
   var LANGS = ['fr', 'nl', 'en'];
   document.documentElement.classList.add('js');
   function pick() {
+    var h = (location.hash || '').slice(1).toLowerCase(); if (LANGS.indexOf(h) >= 0) return h;
     try { var s = localStorage.getItem('sollist.lang'); if (LANGS.indexOf(s) >= 0) return s; } catch (e) {}
     var n = (navigator.language || 'fr').slice(0, 2).toLowerCase();
     return LANGS.indexOf(n) >= 0 ? n : 'en';
