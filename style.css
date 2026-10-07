@@ -37,6 +37,8 @@ main { margin-top: -28px; padding-bottom: 56px; }
 .card p, .card li { font-size: 15.5px; }
 .card ul { padding-left: 20px; margin: 8px 0; }
 .app { display: flex; gap: 16px; align-items: flex-start; }
+.app + .app, .app-next { margin-top: 22px; padding-top: 22px; border-top: 1px solid var(--line); }
+.apptitle { margin-top: 0 !important; }
 .app img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
 .applink { display: flex; gap: 12px; align-items: center; padding: 12px 18px; }
 .applink img { width: 36px; height: 36px; border-radius: 9px; flex: none; }
