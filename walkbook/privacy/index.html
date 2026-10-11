@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Walkbook — Politique de confidentialité</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root { --primary:#1565C0; --bg:#F5F7FA; --surface:#FFF; --text:#1A1A2E; --sub:#6B7280; --border:#E5E7EB; --accent:#E3F2FD; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif; background:var(--bg); color:var(--text); line-height:1.65; }
+  header { background:var(--primary); color:#FFF; padding:26px 20px; }
+  header .wrap { max-width:760px; margin:0 auto; display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+  header h1 { font-size:21px; font-weight:700; }
+  header .sub { font-size:13px; opacity:.9; }
+  nav { max-width:760px; margin:18px auto 0; padding:0 20px; display:flex; gap:8px; }
+  nav button { background:var(--surface); border:1px solid var(--border); color:var(--sub); border-radius:999px; padding:7px 16px; font-size:14px; font-weight:600; cursor:pointer; font-family:inherit; }
+  nav button[aria-selected="true"] { background:var(--primary); border-color:var(--primary); color:#FFF; }
+  main { max-width:760px; margin:0 auto; padding:20px 20px 70px; }
+  section.lang[hidden] { display:none; }
+  h2 { font-size:17px; color:var(--primary); margin:28px 0 8px; }
+  h2:first-of-type { margin-top:14px; }
+  p, li { font-size:15px; margin-bottom:10px; }
+  ul { padding-left:22px; margin-bottom:10px; }
+  .card { background:var(--surface); border-radius:14px; padding:20px 22px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05); }
+  .highlight { background:var(--accent); border-left:4px solid var(--primary); border-radius:0 10px 10px 0; padding:14px 18px; margin:14px 0; }
+  .meta { color:var(--sub); font-size:13px; }
+  table { width:100%; border-collapse:collapse; font-size:14px; margin:10px 0 16px; }
+  th { text-align:left; background:var(--accent); color:var(--primary); padding:9px 11px; font-size:13px; }
+  td { padding:9px 11px; border-bottom:1px solid var(--border); vertical-align:top; }
+  a { color:var(--primary); }
+  footer { max-width:760px; margin:0 auto; padding:0 20px 50px; color:var(--sub); font-size:13px; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#121212; --surface:#1E1E1E; --text:#F3F4F6; --sub:#9CA3AF; --border:#374151; --accent:#0D2B45; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div style="font-size:30px">🚶</div>
+    <div>
+      <h1 id="page-title">Walkbook — Politique de confidentialité</h1>
+      <div class="sub" id="page-updated">Dernière mise à jour : 10 octobre 2026</div>
+    </div>
+  </div>
+</header>
+
+<nav role="tablist">
+  <button role="tab" data-lang="fr" aria-selected="true">Français</button>
+  <button role="tab" data-lang="nl" aria-selected="false">Nederlands</button>
+  <button role="tab" data-lang="en" aria-selected="false">English</button>
+</nav>
+
+<main>
+
+<!-- ══════════════════════════ FRANÇAIS ══════════════════════════ -->
+<section class="lang" id="fr">
+
+  <div class="card">
+    <p><strong>Walkbook</strong> est un journal de marche indépendant : l'application chronomètre vos séances, mesure la distance parcourue, enregistre vos pauses et affiche votre évolution. Elle n'est affiliée à aucun hôpital ni à aucune institution de soins.</p>
+    <p class="meta">Cette page décrit exactement quelles données l'application traite, pourquoi, et comment vous en gardez le contrôle.</p>
+  </div>
+
+  <div class="highlight">
+    <p style="margin-bottom:0"><strong>En résumé :</strong> l'application ne vous demande jamais votre nom, votre adresse ni votre e-mail. Elle n'affiche aucune publicité. Elle ne vend aucune donnée. Vos positions GPS servent uniquement à calculer la distance d'une séance en cours — aucun trajet n'est enregistré. Vous pouvez tout effacer en deux touches depuis l'application.</p>
+  </div>
+
+  <h2>1. Responsable de vos données</h2>
+  <p>Le responsable de vos données (au sens du RGPD) est <strong id="fr-controller">SOLLIST</strong>, <span id="fr-address">Bruxelles, Belgique</span>.</p>
+  <p>Pour toute question relative à vos données : <a id="fr-mail" href="mailto:contact@sollist.co">contact@sollist.co</a></p>
+
+  <h2>2. Quelles données sont traitées</h2>
+  <table>
+    <tr><th>Catégorie</th><th>Détail</th></tr>
+    <tr>
+      <td><strong>Profil</strong></td>
+      <td>Votre consentement et un identifiant technique anonyme généré par l'application. <em>Aucun nom, aucune adresse, aucun e-mail, aucun numéro de registre national, aucune information personnelle.</em></td>
+    </tr>
+    <tr>
+      <td><strong>Séances de marche</strong></td>
+      <td>Date, durée, nombre de pas, distance parcourue, distance avant la première pause, segments marche/pause.</td>
+    </tr>
+    <tr>
+      <td><strong>Localisation</strong></td>
+      <td>Voir la section 3 ci-dessous — cas particulier.</td>
+    </tr>
+  </table>
+  <p>Ces données décrivent uniquement une activité physique (marcher, faire une pause) et ne contiennent aucune identité. Elles sont néanmoins conservées avec le même soin que des données sensibles : chiffrement des échanges, hébergement dans l'Union européenne, effacement sur simple demande.</p>
+
+  <h2>3. Localisation (GPS)</h2>
+  <p>L'application utilise le GPS de votre téléphone <strong>uniquement pendant une séance de marche que vous avez démarrée vous-même</strong>. Les positions successives servent à calculer la distance parcourue, puis sont immédiatement écartées.</p>
+  <div class="highlight">
+    <p><strong>Localisation en arrière-plan.</strong> Pour que la mesure continue quand votre écran est verrouillé ou que votre téléphone est dans votre poche, l'application peut accéder à votre position même lorsqu'elle n'est pas à l'écran. Cet accès vous est expliqué dans l'application avant toute demande d'autorisation, et vous pouvez le refuser : la séance fonctionnera alors uniquement avec l'application ouverte à l'écran.</p>
+    <p style="margin-bottom:0"><strong>Aucun trajet n'est enregistré.</strong> Seule la distance totale de la séance est conservée. Vos coordonnées GPS ne quittent jamais votre téléphone à cette fin, ne sont pas historisées, ne sont pas partagées et ne servent à aucun ciblage publicitaire.</p>
+  </div>
+  <p>Une exception, avec votre autorisation de localisation : pour afficher les conseils météo adaptés à votre séance, une position <strong>approximative</strong>, arrondie à environ 1 km, est transmise au service <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>. Cette requête ne contient aucune donnée de séance ni aucun identifiant vous concernant.</p>
+
+  <h2>4. Finalités et base légale</h2>
+  <ul>
+    <li><strong>Assurer le fonctionnement de l'application</strong> (enregistrer et afficher vos séances, votre évolution, votre journal) — base légale : votre <strong>consentement</strong> (art. 6.1.a du RGPD), recueilli lors de la première utilisation.</li>
+    <li><strong>Vous permettre d'exporter votre journal en PDF</strong>, si vous choisissez de le partager avec la personne de votre choix.</li>
+  </ul>
+  <p>Vos données ne sont utilisées à <strong>aucune autre fin</strong> : ni publicité, ni profilage, ni revente, ni prise de décision automatisée.</p>
+
+  <h2>5. Où sont stockées vos données</h2>
+  <ul>
+    <li><strong>Sur votre téléphone</strong>, dans le stockage privé de l'application.</li>
+    <li><strong>Sur un serveur Supabase</strong> (Supabase Inc.), hébergé dans la région <span id="fr-region">de Francfort, Allemagne (Union européenne — eu-central-1)</span>, afin que vos séances ne soient pas perdues. L'accès est verrouillé par des règles de sécurité au niveau de la ligne (<em>Row Level Security</em>) : votre appareil ne peut lire que vos propres données, et aucun autre utilisateur ne peut y accéder. SOLLIST dispose d'un accès administrateur protégé, réservé à la maintenance technique.</li>
+  </ul>
+  <p>La connexion au serveur est <strong>anonyme</strong> : l'application crée un identifiant technique aléatoire, sans e-mail ni mot de passe. Vos enregistrements ne sont donc rattachés à aucune identité civile.</p>
+
+  <h2>6. Destinataires</h2>
+  <p>Vos données ne sont transmises à aucun tiers, à l'exception des prestataires techniques strictement nécessaires :</p>
+  <table>
+    <tr><th>Prestataire</th><th>Rôle</th><th>Données reçues</th></tr>
+    <tr><td>Supabase Inc.</td><td>Hébergement de la base de données</td><td>Séances (sans identité)</td></tr>
+    <tr><td>Open-Meteo</td><td>Prévisions météo</td><td>Position approximative uniquement</td></tr>
+    <tr><td>Expo (650 Industries Inc.)</td><td>Mises à jour de l'application</td><td>Données techniques de l'appareil (adresse IP, version de l'application et du système), aucune donnée de séance</td></tr>
+  </table>
+  <p>Aucune donnée n'est vendue, louée, ni transmise à des régies publicitaires, des courtiers en données, des assureurs ou des employeurs.</p>
+
+  <h2>7. Durée de conservation</h2>
+  <p>Vos données sont conservées jusqu'à ce que vous les supprimiez. Elles sont effacées dès que vous en faites la demande — voir la section suivante. Pensez à les supprimer depuis l'application avant de la désinstaller : la désinstallation seule n'efface pas la copie serveur.</p>
+
+  <h2>8. Supprimer vos données</h2>
+  <p>Dans l'application : <strong>Profil → Supprimer toutes mes données</strong>. L'effacement est immédiat et définitif, sur votre téléphone comme sur le serveur.</p>
+  <p>Vous pouvez également en faire la demande par e-mail à <a id="fr-mail2" href="mailto:contact@sollist.co">contact@sollist.co</a>, à laquelle il sera donné suite dans un délai maximum de 30 jours.</p>
+
+  <h2>9. Vos droits</h2>
+  <p>Conformément au RGPD, vous disposez à tout moment des droits d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité de vos données, ainsi que du droit de retirer votre consentement — sans que ce retrait n'affecte la licéité des opérations effectuées auparavant.</p>
+  <p>Pour les exercer, écrivez à <a id="fr-mail3" href="mailto:contact@sollist.co">contact@sollist.co</a>.</p>
+  <p>Vous avez également le droit d'introduire une réclamation auprès de l'<strong>Autorité de protection des données</strong> (Rue de la Presse 35, 1000 Bruxelles — <a href="https://www.autoriteprotectiondonnees.be" target="_blank" rel="noopener">autoriteprotectiondonnees.be</a>).</p>
+
+  <h2>10. Sécurité</h2>
+  <p>Les échanges avec le serveur sont chiffrés (HTTPS/TLS). L'accès aux enregistrements est restreint par des règles de sécurité au niveau de la ligne. Les données présentes sur votre téléphone sont protégées par le cloisonnement applicatif du système d'exploitation.</p>
+
+  <h2>11. Mineurs</h2>
+  <p>L'application s'adresse à des personnes adultes qui souhaitent tenir un journal de marche. Elle n'est pas destinée aux moins de 16 ans et ne collecte pas sciemment leurs données.</p>
+
+  <h2>12. À savoir</h2>
+  <p>Walkbook est un <strong>journal de marche</strong>. L'application ne pose aucun diagnostic, ne délivre aucun soin et ne remplace pas l'avis d'un professionnel de santé. En cas de douleur thoracique, d'essoufflement inhabituel ou de malaise, arrêtez la séance et contactez un professionnel de santé.</p>
+
+  <h2>13. Modifications</h2>
+  <p>Toute modification substantielle de cette politique sera signalée dans l'application. La date de dernière mise à jour figure en haut de cette page.</p>
+
+</section>
+
+<!-- ══════════════════════════ NEDERLANDS ══════════════════════════ -->
+<section class="lang" id="nl" hidden>
+
+  <div class="card">
+    <p><strong>Walkbook</strong> is een onafhankelijk wandeljournaal: de app klokt uw sessies, meet de afgelegde afstand, registreert uw pauzes en toont uw evolutie. De app is niet verbonden aan een ziekenhuis of zorginstelling.</p>
+    <p class="meta">Deze pagina beschrijft precies welke gegevens de app verwerkt, waarom, en hoe u de controle behoudt.</p>
+  </div>
+
+  <div class="highlight">
+    <p style="margin-bottom:0"><strong>Kort samengevat:</strong> de app vraagt nooit uw naam, adres of e-mailadres. Er is geen reclame. Er worden geen gegevens verkocht. Uw gps-posities dienen uitsluitend om de afstand van een lopende sessie te berekenen — er wordt geen route bewaard. U kunt alles met twee tikken wissen vanuit de app.</p>
+  </div>
+
+  <h2>1. Verwerkingsverantwoordelijke</h2>
+  <p>De verwerkingsverantwoordelijke is <strong id="nl-controller">SOLLIST</strong>, <span id="nl-address">Brussel, België</span>.</p>
+  <p>Voor vragen over uw gegevens: <a id="nl-mail" href="mailto:contact@sollist.co">contact@sollist.co</a></p>
+
+  <h2>2. Welke gegevens worden verwerkt</h2>
+  <table>
+    <tr><th>Categorie</th><th>Detail</th></tr>
+    <tr>
+      <td><strong>Profiel</strong></td>
+      <td>Uw toestemming en een anonieme technische identificator die de app aanmaakt. <em>Geen naam, geen adres, geen e-mailadres, geen rijksregisternummer, geen persoonlijke informatie.</em></td>
+    </tr>
+    <tr>
+      <td><strong>Wandelsessies</strong></td>
+      <td>Datum, duur, aantal stappen, afgelegde afstand, afstand vóór de eerste pauze, segmenten wandelen/pauze.</td>
+    </tr>
+    <tr>
+      <td><strong>Locatie</strong></td>
+      <td>Zie punt 3 hieronder — bijzonder geval.</td>
+    </tr>
+  </table>
+  <p>Deze gegevens beschrijven uitsluitend een fysieke activiteit (wandelen, pauzeren) en bevatten geen enkele identiteit. Ze worden niettemin met dezelfde zorg bewaard als gevoelige gegevens: versleutelde uitwisselingen, hosting in de Europese Unie, wissing op eenvoudig verzoek.</p>
+
+  <h2>3. Locatie (gps)</h2>
+  <p>De app gebruikt de gps van uw telefoon <strong>alleen tijdens een wandelsessie die u zelf start</strong>. De opeenvolgende posities dienen om de afgelegde afstand te berekenen en worden daarna onmiddellijk verworpen.</p>
+  <div class="highlight">
+    <p><strong>Locatie op de achtergrond.</strong> Om te blijven meten wanneer uw scherm vergrendeld is of uw telefoon in uw zak zit, kan de app uw locatie ook op de achtergrond raadplegen. Dit wordt in de app uitgelegd vóór er om toestemming wordt gevraagd, en u mag weigeren: de sessie werkt dan enkel zolang de app op het scherm openstaat.</p>
+    <p style="margin-bottom:0"><strong>Er wordt geen route bewaard.</strong> Alleen de totale afstand van de sessie wordt bijgehouden. Uw gps-coördinaten verlaten uw telefoon hiervoor nooit, worden niet in een historiek bijgehouden, niet gedeeld en niet gebruikt voor reclamedoeleinden.</p>
+  </div>
+  <p>Eén uitzondering, met uw locatietoestemming: om weersadvies bij uw sessie te tonen, wordt een <strong>bij benadering</strong> bepaalde positie, afgerond op ongeveer 1 km, doorgestuurd naar de dienst <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>. Die aanvraag bevat geen sessiegegevens en geen identificator van u.</p>
+
+  <h2>4. Doeleinden en rechtsgrond</h2>
+  <ul>
+    <li><strong>De werking van de app verzekeren</strong> (uw sessies, evolutie en journaal opslaan en tonen) — rechtsgrond: uw <strong>toestemming</strong> (art. 6.1.a AVG), gegeven bij het eerste gebruik.</li>
+    <li><strong>U toelaten uw journaal als PDF te exporteren</strong>, als u ervoor kiest het te delen met wie u wilt.</li>
+  </ul>
+  <p>Uw gegevens worden voor <strong>geen enkel ander doel</strong> gebruikt: geen reclame, geen profilering, geen doorverkoop, geen geautomatiseerde besluitvorming.</p>
+
+  <h2>5. Waar uw gegevens worden bewaard</h2>
+  <ul>
+    <li><strong>Op uw telefoon</strong>, in de private opslag van de app.</li>
+    <li><strong>Op een Supabase-server</strong> (Supabase Inc.), gehost in de regio <span id="nl-region">Frankfurt, Duitsland (Europese Unie — eu-central-1)</span>, zodat uw sessies niet verloren gaan. De toegang is vergrendeld met <em>Row Level Security</em>-regels: uw toestel kan enkel uw eigen gegevens lezen, en geen enkele andere gebruiker heeft er toegang toe. De verwerkingsverantwoordelijke beschikt over een beveiligde beheerderstoegang, uitsluitend voor technisch onderhoud.</li>
+  </ul>
+  <p>De verbinding met de server is <strong>anoniem</strong>: de app maakt een willekeurige technische identificator aan, zonder e-mailadres of wachtwoord. Uw records zijn dus aan geen enkele burgerlijke identiteit gekoppeld.</p>
+
+  <h2>6. Ontvangers</h2>
+  <p>Uw gegevens worden aan geen enkele derde doorgegeven, met uitzondering van de strikt noodzakelijke technische dienstverleners:</p>
+  <table>
+    <tr><th>Dienstverlener</th><th>Rol</th><th>Ontvangen gegevens</th></tr>
+    <tr><td>Supabase Inc.</td><td>Hosting van de database</td><td>Sessies (zonder identiteit)</td></tr>
+    <tr><td>Open-Meteo</td><td>Weersvoorspelling</td><td>Enkel de positie bij benadering</td></tr>
+    <tr><td>Expo (650 Industries Inc.)</td><td>Updates van de app</td><td>Technische toestelgegevens (IP-adres, versie van de app en het systeem), geen sessiegegevens</td></tr>
+  </table>
+  <p>Er worden geen gegevens verkocht, verhuurd of doorgegeven aan reclamebedrijven, datahandelaars, verzekeraars of werkgevers.</p>
+
+  <h2>7. Bewaartermijn</h2>
+  <p>Uw gegevens worden bewaard tot u ze wist. Ze worden verwijderd zodra u daarom vraagt — zie het volgende punt. Wis ze vanuit de app voordat u de app verwijdert: het verwijderen van de app alleen wist de serverkopie niet.</p>
+
+  <h2>8. Uw gegevens wissen</h2>
+  <p>In de app: <strong>Profiel → Al mijn gegevens verwijderen</strong>. De verwijdering is onmiddellijk en definitief, zowel op uw telefoon als op de server.</p>
+  <p>U kunt dit ook per e-mail vragen via <a id="nl-mail2" href="mailto:contact@sollist.co">contact@sollist.co</a>; daaraan wordt binnen maximaal 30 dagen gevolg gegeven.</p>
+
+  <h2>9. Uw rechten</h2>
+  <p>Overeenkomstig de AVG beschikt u op elk moment over het recht op inzage, verbetering, wissing, beperking, bezwaar en overdraagbaarheid van uw gegevens, alsook over het recht om uw toestemming in te trekken — zonder dat die intrekking afbreuk doet aan de rechtmatigheid van de eerdere verwerking.</p>
+  <p>Om deze uit te oefenen, schrijf naar <a id="nl-mail3" href="mailto:contact@sollist.co">contact@sollist.co</a>.</p>
+  <p>U hebt ook het recht een klacht in te dienen bij de <strong>Gegevensbeschermingsautoriteit</strong> (Drukpersstraat 35, 1000 Brussel — <a href="https://www.gegevensbeschermingsautoriteit.be" target="_blank" rel="noopener">gegevensbeschermingsautoriteit.be</a>).</p>
+
+  <h2>10. Beveiliging</h2>
+  <p>De uitwisselingen met de server zijn versleuteld (HTTPS/TLS). De toegang tot de records is beperkt door Row Level Security-regels. De gegevens op uw telefoon worden beschermd door de applicatie-isolatie van het besturingssysteem.</p>
+
+  <h2>11. Minderjarigen</h2>
+  <p>De app richt zich op volwassenen die een wandeljournaal willen bijhouden. Ze is niet bestemd voor personen jonger dan 16 jaar en verzamelt hun gegevens niet bewust.</p>
+
+  <h2>12. Goed om te weten</h2>
+  <p>Walkbook is een <strong>wandeljournaal</strong>. De app stelt geen diagnose, biedt geen zorg en vervangt het advies van een zorgverlener niet. Bij pijn op de borst, ongewone kortademigheid of onwel worden: stop de sessie en neem contact op met een zorgverlener.</p>
+
+  <h2>13. Wijzigingen</h2>
+  <p>Elke wezenlijke wijziging van dit beleid wordt in de app gemeld. De datum van de laatste update staat bovenaan deze pagina.</p>
+
+</section>
+
+<!-- ══════════════════════════ ENGLISH ══════════════════════════ -->
+<section class="lang" id="en" hidden>
+
+  <div class="card">
+    <p><strong>Walkbook</strong> is an independent walking journal: the app times your sessions, measures the distance covered, records your pauses and shows your progress. It is not affiliated with any hospital or healthcare institution.</p>
+    <p class="meta">This page describes exactly what data the app processes, why, and how you stay in control of it.</p>
+  </div>
+
+  <div class="highlight">
+    <p style="margin-bottom:0"><strong>In short:</strong> the app never asks for your name, address or email. It shows no advertising. It sells no data. Your GPS positions are used only to compute the distance of an ongoing session — no route is ever stored. You can erase everything with two taps from within the app.</p>
+  </div>
+
+  <h2>1. Data controller</h2>
+  <p>The data controller is <strong id="en-controller">SOLLIST</strong>, <span id="en-address">Brussels, Belgium</span>.</p>
+  <p>For any question about your data: <a id="en-mail" href="mailto:contact@sollist.co">contact@sollist.co</a></p>
+
+  <h2>2. What data is processed</h2>
+  <table>
+    <tr><th>Category</th><th>Detail</th></tr>
+    <tr>
+      <td><strong>Profile</strong></td>
+      <td>Your consent and an anonymous technical identifier generated by the app. <em>No name, no address, no email, no national ID number, no personal information.</em></td>
+    </tr>
+    <tr>
+      <td><strong>Walking sessions</strong></td>
+      <td>Date, duration, step count, distance covered, distance before the first pause, walk/pause segments.</td>
+    </tr>
+    <tr>
+      <td><strong>Location</strong></td>
+      <td>See section 3 below — specific handling.</td>
+    </tr>
+  </table>
+  <p>This data describes physical activity only (walking, pausing) and contains no identity. It is nevertheless stored with the same care as sensitive data: encrypted exchanges, hosting in the European Union, deletion on request.</p>
+
+  <h2>3. Location (GPS)</h2>
+  <p>The app uses your phone's GPS <strong>only during a walking session you started yourself</strong>. Successive positions are used to compute the distance covered, then immediately discarded.</p>
+  <div class="highlight">
+    <p><strong>Background location.</strong> So the measurement keeps running when your screen is locked or your phone is in your pocket, the app may access your location while it is not on screen. This access is explained inside the app before any permission is requested, and you may decline: the session will then only work while the app stays open on screen.</p>
+    <p style="margin-bottom:0"><strong>No route is stored.</strong> Only the total distance of the session is kept. Your GPS coordinates never leave your phone for this purpose, are never kept as a history, never shared, and never used for advertising.</p>
+  </div>
+  <p>One exception, subject to your location permission: to display weather advice for your session, an <strong>approximate</strong> position, rounded to about 1 km, is sent to the <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> service. That request contains no session data and no identifier relating to you.</p>
+
+  <h2>4. Purposes and legal basis</h2>
+  <ul>
+    <li><strong>Operating the app</strong> (recording and displaying your sessions, progress and journal) — legal basis: your <strong>consent</strong> (Art. 6(1)(a) GDPR), collected on first use.</li>
+    <li><strong>Letting you export your journal as a PDF</strong>, if you choose to share it with whoever you like.</li>
+  </ul>
+  <p>Your data is used for <strong>no other purpose</strong>: no advertising, no profiling, no resale, no automated decision-making.</p>
+
+  <h2>5. Where your data is stored</h2>
+  <ul>
+    <li><strong>On your phone</strong>, in the app's private storage.</li>
+    <li><strong>On a Supabase server</strong> (Supabase Inc.), hosted in the <span id="en-region">Frankfurt, Germany (European Union — eu-central-1)</span> region, so your sessions are not lost. Access is locked down by row level security rules: your device can only read your own data, and no other user can access it. The data controller has a protected administrator access, used only for technical maintenance.</li>
+  </ul>
+  <p>The connection to the server is <strong>anonymous</strong>: the app creates a random technical identifier, with no email and no password. Your records are therefore not tied to any civil identity.</p>
+
+  <h2>6. Recipients</h2>
+  <p>Your data is not passed to any third party, except for the strictly necessary technical providers:</p>
+  <table>
+    <tr><th>Provider</th><th>Role</th><th>Data received</th></tr>
+    <tr><td>Supabase Inc.</td><td>Database hosting</td><td>Sessions (without identity)</td></tr>
+    <tr><td>Open-Meteo</td><td>Weather forecast</td><td>Approximate position only</td></tr>
+    <tr><td>Expo (650 Industries Inc.)</td><td>App updates</td><td>Technical device data (IP address, app and system version), no session data</td></tr>
+  </table>
+  <p>No data is sold, rented, or passed to advertising networks, data brokers, insurers or employers.</p>
+
+  <h2>7. Retention</h2>
+  <p>Your data is kept until you delete it. It is erased as soon as you request it — see the next section. Please delete it from within the app before uninstalling: uninstalling alone does not erase the server copy.</p>
+
+  <h2>8. Deleting your data</h2>
+  <p>In the app: <strong>Profile → Delete all my data</strong>. Deletion is immediate and permanent, both on your phone and on the server.</p>
+  <p>You may also request it by email at <a id="en-mail2" href="mailto:contact@sollist.co">contact@sollist.co</a>, which will be acted upon within 30 days at most.</p>
+
+  <h2>9. Your rights</h2>
+  <p>Under the GDPR you have, at any time, the rights of access, rectification, erasure, restriction, objection and portability regarding your data, as well as the right to withdraw your consent — without such withdrawal affecting the lawfulness of processing carried out beforehand.</p>
+  <p>To exercise them, write to <a id="en-mail3" href="mailto:contact@sollist.co">contact@sollist.co</a>.</p>
+  <p>You also have the right to lodge a complaint with the Belgian <strong>Data Protection Authority</strong> (Rue de la Presse 35, 1000 Brussels — <a href="https://www.dataprotectionauthority.be" target="_blank" rel="noopener">dataprotectionauthority.be</a>).</p>
+
+  <h2>10. Security</h2>
+  <p>Exchanges with the server are encrypted (HTTPS/TLS). Access to records is restricted by row level security rules. Data held on your phone is protected by the operating system's application sandboxing.</p>
+
+  <h2>11. Minors</h2>
+  <p>The app is intended for adults who want to keep a walking journal. It is not intended for people under 16 and does not knowingly collect their data.</p>
+
+  <h2>12. Please note</h2>
+  <p>Walkbook is a <strong>walking journal</strong>. The app makes no diagnosis, provides no care and does not replace the advice of a healthcare professional. If you experience chest pain, unusual shortness of breath or faintness, stop the session and contact a healthcare professional.</p>
+
+  <h2>13. Changes</h2>
+  <p>Any substantial change to this policy will be flagged in the app. The date of the last update appears at the top of this page.</p>
+
+</section>
+
+</main>
+
+<footer>
+  Walkbook — application indépendante / onafhankelijke app / independent app.
+</footer>
+
+<script>
+  // L'en-tête suit la langue choisie (il restait en français auparavant).
+  const HEAD = {
+    fr: { title: 'Walkbook — Politique de confidentialité', updated: 'Dernière mise à jour : 10 octobre 2026' },
+    nl: { title: 'Walkbook — Privacybeleid',                 updated: 'Laatst bijgewerkt: 10 oktober 2026' },
+    en: { title: 'Walkbook — Privacy policy',                updated: 'Last updated: 10 October 2026' },
+  };
+  const tabs = document.querySelectorAll('nav button');
+  const panes = document.querySelectorAll('section.lang');
+  function show(lang) {
+    tabs.forEach(t => t.setAttribute('aria-selected', String(t.dataset.lang === lang)));
+    panes.forEach(p => { p.hidden = (p.id !== lang); });
+    document.documentElement.lang = lang;
+    document.title = HEAD[lang].title;
+    document.getElementById('page-title').textContent = HEAD[lang].title;
+    document.getElementById('page-updated').textContent = HEAD[lang].updated;
+    history.replaceState(null, '', '#' + lang);
+  }
+  tabs.forEach(t => t.addEventListener('click', () => show(t.dataset.lang)));
+  // Langue : celle demandée par l'app (#fr, #nl, #en), sinon celle du navigateur.
+  // Toute autre langue que le français ou le néerlandais ouvre l'anglais.
+  const initial = location.hash.replace('#', '');
+  const nav = (navigator.language || 'en').slice(0, 2);
+  show(['fr', 'nl', 'en'].includes(initial) ? initial : ['fr', 'nl'].includes(nav) ? nav : 'en');
+</script>
+
+</body>
+</html>
